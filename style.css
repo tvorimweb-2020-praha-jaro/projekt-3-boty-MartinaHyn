@@ -31,6 +31,8 @@ body {
   width: 670px;
   height: 440px;
   padding: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 /*-------------------------------*/
 .vizual, .detaily{
@@ -98,25 +100,27 @@ body {
   margin: 0;
 }
 .velikosti{
+  display: flex;
+  justify-content: space-around;
   padding: 0;
-  margin: 0;
 }
 .velikosti li{
-  display: inline-block;
-  padding: 12px;
+  display: inline-block; /* je to tak v pořádku? kombinace display:flex a display:inline-block */
+  padding: 5px;
 }
 .vybrana{
   color:#f15f42;
   border: 1px solid #f15f42;
   border-radius: 50%;
 }
-.akce a{
+.tlacitko{
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   background-color: #f15f42;
-  border-radius: 10%;
-  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  padding: 15px 25px;
   position: absolute;
   bottom: 30px;
   left: 30px; 
